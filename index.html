@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de matrices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#matriz2x2">Matriz 2x2</a></li>
+            <li><a href="#matriz3x3">Matriz 3x3</a></li>
+            <li><a href="#matriz4x4">Determinante de matriz</a></li>
+        </ul>
+    </nav>
+        
+    <section id="matriz2x2">
+        <h2>Matriz 2x2</h2>
+        
+        <div id="descripcion2x2">
+            <br>
+            <h2>¿CÓMO FUNCIONA UNA MATRIZ 2X2?</h2>
+            <p>Dado un sistema de ecuaciones </p>
+            <img src="img/2x2_ecuacion.jpg" alt="ecuacion2x2">
+            <p>Podemos representar el sistema de ecuaciones en una matriz, como vemos a continuación:</p>
+            <img src="img/2x2_matriz.jpg" alt="matriz2x2">
+            <p>Una vez obtenida la matriz podemos pasar a obtener la determinante y obtener los valores de “x” y “y”</p>
+            
+        </div>
+
+        <table id="2x2">
+            <tr class="fila2x2">
+                <td><input oninput="ver_boton_limpiar('2x2')" type="text" placeholder="x1"></td>
+                <td><input oninput="ver_boton_limpiar('2x2')" type="text" placeholder="y1"></td>
+                <td><input oninput="ver_boton_limpiar('2x2')" type="text" placeholder="t1"></td>
+            </tr>
+            <tr class="fila2x2">
+                <td><input oninput="ver_boton_limpiar('2x2')" type="text" placeholder="x2"></td>
+                <td><input oninput="ver_boton_limpiar('2x2')" type="text" placeholder="y2"></td>
+                <td><input oninput="ver_boton_limpiar('2x2')" type="text" placeholder="t2"></td>
+            </tr>
+        </table>
+    
+        <p id="resultado2x2"></p>
+        <p id="resultado_determinante2x2"></p>
+    
+        <button id="btn2x2" class="boton">Calcular</button>
+        <button id="limpiar2x2" class="limpiar boton" onclick="limpiar_casilleros('2x2')">Limpiar casilleros</button>
+    </section>
+
+    <section id="matriz3x3">
+        <h2>Matriz 3x3</h2>
+        
+        <div id="descripcion3x3">
+            <br>
+            <h2>¿CÓMO FUNCIONA UNA MATRIZ 3X3?</h2>
+            <p>Dado un sistema de ecuaciones </p>
+            <img src="img/3x3_ecuacion.jpg" alt="ecuacion3x3">
+            <p>Podemos representar el sistema de ecuaciones en una matriz, como vemos a continuación:</p>
+            <img src="img/3x3_matriz.jpg" alt="matriz3x3">
+            <p>Una vez obtenida la matriz podemos pasar a obtener la determinante y obtener los valores de “x”, “y” y "z"</p>
+    
+        </div>
+
+        <table id="3x3">
+            <tr class="fila3x3">
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="x1"></td>
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="y1"></td>
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="z1"></td>
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="t1"></td>
+            </tr>
+            <tr class="fila3x3">
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="x2"></td>
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="y2"></td>
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="z2"></td>
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="t2"></td>
+            </tr>
+            <tr class="fila3x3">
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="x3"></td>
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="y3"></td>
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="z3"></td>
+                <td><input oninput="ver_boton_limpiar('3x3')" type="text" placeholder="t3"></td>
+            </tr>
+        </table>
+
+        <p id="resultado3x3"></p>
+        <p id="resultado_determinante3x3"></p>
+    
+        <button id="btn3x3" class="boton">Calcular</button>
+        <button id="limpiar3x3" class="limpiar boton" onclick="limpiar_casilleros('3x3')">Limpiar casilleros</button>
+    </section>
+    
+    <section id="matriz4x4">
+        <h2>Matriz 4x4</h2>
+        
+        <div id="descripcion4x4">
+            <br>
+            <h2>¿CÓMO FUNCIONA UNA MATRIZ 4X4?</h2>
+            <p>Dado un sistema de ecuaciones </p>
+            <img src="img/4x4_ecuacion.jpg" alt="ecuacion4x4">
+            <p>Podemos representar el sistema de ecuaciones en una matriz, como vemos a continuación:</p>
+            <img src="img/4x4_matriz.jpeg" alt="matriz4x4">
+            <p>Una vez obtenida la matriz podemos pasar a obtener la determinante de la Matriz </p>
+    
+        </div>
+
+        <table id="4x4">
+            <tr class="fila4x4">
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="w1"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="x1"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="y1"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="z1"></td>
+            </tr>
+            <tr class="fila4x4">
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="w2"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="x2"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="y2"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="z2"></td>
+            </tr>
+            <tr class="fila4x4">
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="w3"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="x3"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="y3"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="z3"></td>
+            </tr>
+            <tr class="fila4x4">
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="w4"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="x4"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="y4"></td>
+                <td><input oninput="ver_boton_limpiar('4x4')" type="text" placeholder="z4"></td>
+            </tr>
+        </table>
+        <p id="resultado_determinante4x4"></p>
+
+        <button id="btn4x4" class="boton">Calcular</button>
+        <button id="limpiar4x4" class="limpiar boton" onclick="limpiar_casilleros('4x4')">Limpiar casilleros</button>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
